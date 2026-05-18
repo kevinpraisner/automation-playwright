@@ -13,7 +13,7 @@ allure-results/
 allure-report/
 .pytest_cache/
 
-# Playwright (Navegadores baixados localmente se houver)
+
 .playwright/
 
 # Configurações do VS Code

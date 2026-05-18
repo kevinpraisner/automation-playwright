@@ -1,6 +1,6 @@
 from faker import Faker
 
-# Inicializamos o Faker em inglês, pois o site Automation Exercise é em inglês
+
 fake = Faker('en_US')
 
 class DataFactory:

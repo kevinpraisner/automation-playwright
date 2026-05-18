@@ -27,7 +27,6 @@ def clica_login(login_page):
 
 @when("ele tenta realizar o login com um e-mail aleatório e senha inválida")
 def login_invalido_dinamico(login_page):
-    # Usando o DataFactory que criamos na Etapa 3
     user_data = DataFactory.generate_user_data()
     login_page.do_login(user_data["email"], user_data["password"])
 
@@ -44,7 +43,6 @@ def verifica_login_sucesso(login_page):
 
 @then("o sistema deve bloquear o acesso")
 def verifica_bloqueio(login_page):
-    # Garante que a URL não mudou ou que não fomos redirecionados para a home logada
     assert "login" in login_page.page.url
 
 @then(parsers.parse('deve exibir a mensagem de erro: "{mensagem}"'))
