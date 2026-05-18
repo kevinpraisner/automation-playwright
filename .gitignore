@@ -1,0 +1,20 @@
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+
+# Caches do Python
+**/__pycache__/
+*.pyc
+
+# Relatórios de Testes Locais
+report.html
+allure-results/
+allure-report/
+.pytest_cache/
+
+# Playwright (Navegadores baixados localmente se houver)
+.playwright/
+
+# Configurações do VS Code
+.vscode/
